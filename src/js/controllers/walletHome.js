@@ -394,7 +394,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
 
   this.copyAddress = function(addr) {
     if (isCordova) {
-      window.cordova.plugins.clipboard.copy('startcoin:' + addr);
+      window.cordova.plugins.clipboard.copy('Iridium:' + addr);
       window.plugins.toast.showShortCenter('Copied to clipboard');
     } else if (nodeWebkit.isDefined()) {
       nodeWebkit.writeToClipboard(addr);
@@ -406,7 +406,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       if (isMobile.Android() || isMobile.Windows()) {
         window.ignoreMobilePause = true;
       }
-      window.plugins.socialsharing.share('I accept @start_coin https://startcoin.com startcoin:' + addr, null, null, null);
+      window.plugins.socialsharing.share('I accept @start_coin https://Iridium.com Iridium:' + addr, null, null, null);
     }
   };
 
@@ -826,7 +826,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
     if (this._paypro)
       return value;
 
-    if (value.indexOf('startcoin:') === 0) {
+    if (value.indexOf('Iridium:') === 0) {
       return this.setFromUri(value);
     } else if (/^https?:\/\//.test(value)) {
       return this.setFromPayPro(value);
