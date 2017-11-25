@@ -28,14 +28,14 @@
     "plugin": false
   },
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://github.com/startcoin-project/copay",
+  "homepage": "https://github.com/RainDev61/startwallet",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/startcoin-project/copay.git",
+    "url": "git://github.com/Raindev61/startwallet.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/startcoin-project/issues"
+    "url": "https://github.com/"
   },
   "dependencies": {
     "express": "^4.11.2",
