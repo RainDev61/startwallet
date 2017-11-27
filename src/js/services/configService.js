@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.startjoin.com/bws/api',
+      url: 'http://localhost:3232/bws/api',
     },
 
     // wallet default config
@@ -23,10 +23,10 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       reconnectDelay: 5000,
       idleDurationMin: 4,
       settings: {
-        unitName: 'START',
+        unitName: 'IRI',
         unitToSatoshi: 100000000,
         unitDecimals: 8,
-        unitCode: 'START',
+        unitCode: 'IRI',
         alternativeName: 'Pound Sterling',
         alternativeIsoCode: 'GBP',
       }
