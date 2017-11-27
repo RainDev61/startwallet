@@ -3,9 +3,9 @@
   version="1.0.1"
   android-versionCode="38"
   ios-CFBundleVersion="1.0.2">
-    <name>Startwallet</name>
+    <name>Iridiumwallet</name>
     <description>
-      A secure StartCOIN wallet for friends and companies.
+      A secure IridiumCOIN wallet for friends and companies.
     </description>
     <author email="hello@startjoin.com" href="https://startwalet.com">
        Iridium Holdings Ltd
