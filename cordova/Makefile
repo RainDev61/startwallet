@@ -8,7 +8,7 @@ plugins:
 	make -C project plugins
 
 project: 
-	cordova create project com.startcoin.startwallet Startwallet
+	cordova create project com.Iridium.Iridiumwallet Iridiumwallet
 	cp config.xml project/config.xml
 	cp ProjectMakefile project/Makefile
 	cp -af ../dist/web/** project/www
@@ -29,14 +29,14 @@ wp8: project plugins
 
 ios: project plugins
 	make -C project ios
-	cp ios/Startwallet-Info.plist project/platforms/ios/Startwallet-Info.plist
-	mkdir -p project/platforms/ios/Startwallet/Resources/icons
-	mkdir -p project/platforms/ios/Startwallet/Resources/splash
-	cp -R ios/icons/* project/platforms/ios/Startwallet/Resources/icons
-	cp -R ios/splash/* project/platforms/ios/Startwallet/Resources/splash
+	cp ios/Startwallet-Info.plist project/platforms/ios/Iridiumwallet-Info.plist
+	mkdir -p project/platforms/ios/Iridiumwallet/Resources/icons
+	mkdir -p project/platforms/ios/Iridiumwallet/Resources/splash
+	cp -R ios/icons/* project/platforms/ios/Iridiumwallet/Resources/icons
+	cp -R ios/splash/* project/platforms/ios/Iridiumwallet/Resources/splash
 
 open-ios: ios
-	open project/platforms/ios/Startwallet.xcodeproj
+	open project/platforms/ios/Iridiumwallet.xcodeproj
 
 run-android: android
 	make -C project run-android
